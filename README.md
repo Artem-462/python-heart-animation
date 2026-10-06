@@ -1,20 +1,26 @@
-Python Heart Animation 💙
-A visual Python project that generates a dynamic, mathematical heart-shaped animation using text, synchronized with background audio.
+# Python Heart Animation 💙
 
-Technologies used: Python, Tkinter (Canvas), math, ctypes (WinMM for audio)
+A lightweight creative coding project that renders a dynamic, mathematical heart-shaped animation with particle glow effects, synchronized with background audio.
 
-Key Features:
+![Demo](preview.gif)
 
-Mathematical calculation of particle trajectories based on parametric heart equations.
+## ✨ Features
+- **Parametric Mathematics:** Particle trajectories calculated dynamically using parametric heart formulas.
+- **Pure Tkinter Canvas:** Smooth rendering without heavy third-party graphics engines.
+- **Native Windows Audio:** Background audio playback powered directly by Windows Multimedia API (`ctypes` + `winmm.dll`).
+- **Standalone Build Ready:** Includes PyInstaller `.spec` configuration for single-binary packaging.
 
-Custom text rendering with dynamic alpha blending and glow effects.
+## 🛠 Tech Stack
+- **Language:** Python
+- **GUI Engine:** Tkinter (Canvas)
+- **Audio Interface:** Windows Multimedia API (`winmm.dll` via `ctypes`)
+- **Math:** Native `math` & `random`
 
-Background audio synchronization using native Windows APIs.
+## 🚀 Quick Start
 
-Standalone executable build configuration included (PyInstaller).
-
-How to run:
-
-Clone the repository.
-
-Run the heart.py script (requires Windows for native audio playback).
+```bash
+git clone https://github.com/Artem-462/python-heart-animation.git
+cd python-heart-animation
+python heart.py
+```
+*(Note: Background audio requires Windows for native WinMM API support).*
